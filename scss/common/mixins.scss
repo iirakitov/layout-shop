@@ -1,0 +1,62 @@
+@mixin xxl() {
+  @media (max-width: $width-xxl) {
+    @content;
+  }
+}
+
+@mixin xl() {
+  @media (max-width: $width-xl) {
+    @content;
+  }
+}
+
+@mixin l() {
+  @media (max-width: $width-l) {
+    @content;
+  }
+}
+
+@mixin m() {
+  @media (max-width: $width-m) {
+    @content;
+  }
+}
+
+@mixin s() {
+  @media (max-width: $width-s) {
+    @content;
+  }
+}
+
+@mixin xs() {
+  @media (max-width: $width-xs) {
+    @content;
+  }
+}
+
+
+@mixin small-font($color) {
+  @extend %font-weight;
+  font-size: $font-size-s;
+  color: $color;
+}
+
+@mixin middle-font($color) {
+  @extend %font-weight;
+  font-size: $font-size-m;
+  color: $color;
+}
+
+@mixin h2-heading($color) {
+  @extend %font-weight-bold;
+  font-size: $font-size-xl;
+  color: $color;
+  margin: 0;
+}
+
+@mixin blue-heading($color) {
+  @extend %font-weight-bold;
+  font-size: $font-size-l;
+  color: $color;
+  margin: 0;
+}

@@ -1,0 +1,158 @@
+.header {
+
+  &__main-line {
+    box-shadow: 0 4px 4px 0 #0000002e;
+  }
+
+  .navbar {
+    position: static;
+  }
+
+  &__upper-line {
+    @include small-font($main-txt-color);
+    padding: 5px 0;
+  }
+
+  &__phone {
+    display: flex;
+  }
+
+  &__phone-icon {
+    img {
+      width: 14px;
+      height: 14px;
+    }
+  }
+
+  &__phone-number {
+    padding-left: 12px;
+
+    span {
+      padding: 0 5px;
+    }
+  }
+
+  &__language {
+    display: flex;
+
+  }
+
+  &__language-icon {
+    padding-left: 2px;
+
+    img {
+      width: 15px;
+      height: 15px;
+    }
+  }
+
+  &__language-select {
+    max-width: 97%;
+  }
+
+  &__select {
+    @include small-font($main-txt-color);
+    border: none;
+    background-color: inherit;
+    outline: none;
+  }
+
+  /*UPPER LINE END*/
+
+  &__main-line {
+    background-color: $background-white;
+
+    .row {
+      align-items: center;
+    }
+  }
+
+  &__logo {
+    padding: 20px 20px 20px 0;
+
+    a {
+      display: inline-block;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  /*SEARCH*/
+
+  &__nav {
+    padding-left: 15px;
+  }
+
+  &__search {
+    position: relative;
+    width: 40px;
+
+    &.active {
+      width: 25%;
+      transition: 1s;
+    }
+
+    &.active .header__search-field {
+      display: initial;
+      border: 2px solid $hover-color;
+      border-radius: 20px;
+    }
+  }
+
+
+  &__search-btn {
+    border: none;
+    position: absolute;
+    height: 100%;
+    right: 0;
+    transition: transform 0.3s;
+
+
+    &:focus, &:active {
+      box-shadow: none;
+    }
+  }
+
+  &__search-field {
+    padding: .375rem 2.75rem .375rem .75rem;
+    display: none;
+
+
+
+
+    &:focus {
+      box-shadow: none;
+      border-color: inherit;
+    }
+  }
+
+
+
+  &__nav-menu {
+    .header__nav-dropdowns {
+      .header__nav-item {
+        .header__nav-link {
+          @include middle-font($main-txt-color);
+        }
+      }
+    }
+  }
+
+  &__nav-wrapper {
+    padding-left: 66px;
+  }
+
+  &__nav-item:nth-child(2) {
+    padding: 0 30px;
+  }
+
+  &__nav-link {
+    padding: .375rem .75rem;
+  }
+
+  &__cart {
+    @extend %justify-content-end;
+  }
+}

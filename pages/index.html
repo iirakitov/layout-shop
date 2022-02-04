@@ -1,0 +1,779 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./../styles/styles.css">
+    <title>Shop</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__upper-line">
+            <div class="container">
+                <div class="row">
+                    <div class="header__phone col-6">
+                        <div class="header__phone-icon d-flex align-items-center">
+                            <img src="./../images/icons/phone.svg" alt="phone">
+                        </div>
+                        <div class="header__phone-number">
+                            +33 <span>(0)4</span>99<span>63</span>20<span>50</span>
+                        </div>
+                    </div>
+                    <div class="header__language col-6 justify-content-end">
+                        <div class="header__language-icon d-flex align-items-center">
+                            <img src="./../images/icons/language.svg" alt="language">
+                        </div>
+                        <div class="header__language-select">
+                            <select class="header__select" aria-label="Select language">
+                                <option selected>English</option>
+                                <option value="1">Russian</option>
+                                <option value="2">Ukrainian</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__main-line">
+            <div class="container">
+                <div class="row">
+                    <div class="header__logo col-3">
+                        <a href="#"><img src="./../images/logo/logo.svg" alt="logo"></a>
+                    </div>
+                    <div class="header__nav col d-flex">
+                        <form class="header__search d-flex col-3 ">
+                            <input class="header__search-field form-control" type="search" placeholder="Search" aria-label="Search">
+                            <button class="header__search-btn btn" type="submit" onclick="return false">
+                                <img src="./../images/icons/search.svg" alt="search">
+                            </button>
+                        </form>
+
+                        <nav class="header__nav-menu navbar navbar-expand-lg navbar-light p-0 col justify-content-end">
+
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+
+
+
+                            <div class="header__nav-wrapper collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="header__nav-dropdowns navbar-nav me-auto mb-lg-0 col-9">
+
+                                    <li class="header__nav-item nav-item dropdown">
+                                        <a class="header__nav-link nav-link dropdown-toggle" href="#" id="navbarDropdownFirst" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Products
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownFirst">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="header__nav-item nav-item dropdown">
+                                        <a class="header__nav-link nav-link dropdown-toggle" href="#" id="navbarDropdownSecond" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Applications
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownSecond">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="header__nav-item  nav-item">
+                                        <a class="header__nav-link nav-link" href="#">Documentation</a>
+                                    </li>
+                                </ul>
+
+                                <ul class="header__cart navbar-nav me-auto col-3">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"><img src="./../images/icons/user.svg" alt="user"></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"><img src="./../images/icons/cart.svg" alt="cart"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main__links">
+            <div class="container">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb main__breadcrumb">
+                        <li class="main__bread-item breadcrumb-item"><a href="#">Products</a></li>
+                        <li class="main__bread-item breadcrumb-item"><a href="#">Display Wall</a></li>
+                        <li class="main__bread-item breadcrumb-item"><a href="#">Products</a></li>
+                    </ol>
+                </nav>
+                <div class="main__link-heading">
+                    <h2>Display Wall</h2>
+                </div>
+            </div>
+        </div>
+        <div class="main__goods">
+            <div class="container">
+                <div class="row">
+                    <aside class="main__sidebar-goods col-3">
+                        <select class="main__sidebar-select form-select" aria-label="Disabled select example">
+                            <option selected>Display Wall</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                        <form class="main__sidebar-checkboxes">
+                            <div class="main__sidebar-reset">
+                                <span>23 Results</span>
+                                <button type="reset">
+                                    <img src="./../images/icons/icon_close.svg" alt="close">
+                                    Clear all Filters
+                                </button>
+                            </div>
+                            <div class="main__sidebar-check-list">
+                                <div class="main__sidebar-subcategory dropdown">
+                                    <button class="main__sidebar-check-btn btn dropdown-toggle p-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+                                        Subcategory
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <div class="main__sidebar-check-item">
+                                            <input class="form-check-input" type="checkbox" value="" id="Xpressions">
+                                            <label class="form-check-label" for="Xpressions">
+                                                Xpressions
+                                            </label>
+                                            <span>(8)</span>
+                                        </div>
+                                        <div class="main__sidebar-check-item">
+                                            <input class="form-check-input" type="checkbox" value="" id="Xtension">
+                                            <label class="form-check-label" for="Xtension">
+                                                Xtension
+                                            </label>
+                                            <span>(8)</span>
+                                        </div>
+                                        <div class="main__sidebar-check-item">
+                                            <input class="form-check-input" type="checkbox" value="" id="Virage">
+                                            <label class="form-check-label" for="Virage">
+                                                Virage
+                                            </label>
+                                            <span>(8)</span>
+                                        </div>
+                                        <div class="main__sidebar-check-item">
+                                            <input class="form-check-input" type="checkbox" value="" id="Contour">
+                                            <label class="form-check-label" for="Contour">
+                                                Contour
+                                            </label>
+                                            <span>(4)</span>
+                                        </div>
+                                        <div class="main__sidebar-check-item">
+                                            <input class="form-check-input" type="checkbox" value="" id="Xperience">
+                                            <label class="form-check-label" for="Xperience">
+                                                Xperience
+                                            </label>
+                                            <span>(4)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main__sidebar-type dropdown">
+                                    <button class="main__sidebar-check-btn btn dropdown-toggle p-0" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+                                        Type
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <div class="main__sidebar-check-item">
+                                            <input class="form-check-input" type="checkbox" value="" id="pop-up">
+                                            <label class="form-check-label" for="pop-up">
+                                                Pop-up
+                                            </label>
+                                            <span>(8)</span>
+                                        </div>
+                                        <div class="main__sidebar-check-item">
+                                            <input class="form-check-input" type="checkbox" value="" id="tubar">
+                                            <label class="form-check-label" for="tubar">
+                                                Tubar
+                                            </label>
+                                            <span>(8)</span>
+                                        </div>
+                                        <div class="main__sidebar-check-item">
+                                            <input class="form-check-input" type="checkbox" value="" id="table-top">
+                                            <label class="form-check-label" for="table-top">
+                                                Table top
+                                            </label>
+                                            <span>(8)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main__sidebar-features dropdown">
+                                    <button class="main__sidebar-check-btn btn dropdown-toggle p-0" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+                                        Features
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <div class="main__sidebar-check-item">
+                                            <input class="form-check-input" type="checkbox" value="" id="Backlit">
+                                            <label class="form-check-label" for="Backlit">
+                                                Backlit
+                                            </label>
+                                            <span>(7)</span>
+                                        </div>
+                                        <div class="main__sidebar-check-item">
+                                            <input class="form-check-input" type="checkbox" value="" id="Tv-mount">
+                                            <label class="form-check-label" for="Tv-mount">
+                                                TV Mount
+                                            </label>
+                                            <span>(8)</span>
+                                        </div>
+                                        <div class="main__sidebar-check-item">
+                                            <input class="form-check-input" type="checkbox" value="" id="Shelving">
+                                            <label class="form-check-label" for="Shelving">
+                                                Shelving
+                                            </label>
+                                            <span>(8)</span>
+                                        </div>
+                                        <div class="main__sidebar-check-item">
+                                            <input class="form-check-input" type="checkbox" value="" id="Arch">
+                                            <label class="form-check-label" for="Arch">
+                                                Arch
+                                            </label>
+                                            <span>(8)</span>
+                                        </div>
+                                        <div class="main__sidebar-check-item">
+                                            <input class="form-check-input" type="checkbox" value="" id="Double-sided">
+                                            <label class="form-check-label" for="Double-sided">
+                                                Double sided
+                                            </label>
+                                            <span>(8)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main__sidebar-width dropdown">
+                                    <button class="main__sidebar-check-btn btn dropdown-toggle p-0" type="button" id="dropdownMenuButton4" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+                                        Width
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <div class="main__sidebar-check-item">
+                                            <input class="form-check-input" type="checkbox" value="" id="width-1">
+                                            <label class="form-check-label" for="width-1">
+                                                2.5
+                                            </label>
+                                            <span>(7)</span>
+                                        </div>
+                                        <div class="main__sidebar-check-item">
+                                            <input class="form-check-input" type="checkbox" value="" id="width-2">
+                                            <label class="form-check-label" for="width-2">
+                                                5
+                                            </label>
+                                            <span>(8)</span>
+                                        </div>
+                                        <div class="main__sidebar-check-item">
+                                            <input class="form-check-input" type="checkbox" value="" id="width-3">
+                                            <label class="form-check-label" for="width-3">
+                                                8
+                                            </label>
+                                            <span>(8)</span>
+                                        </div>
+                                        <div class="main__sidebar-check-item">
+                                            <input class="form-check-input" type="checkbox" value="" id="width-4">
+                                            <label class="form-check-label" for="width-4">
+                                                10
+                                            </label>
+                                            <span>(8)</span>
+                                        </div>
+                                        <div class="main__sidebar-check-item">
+                                            <input class="form-check-input" type="checkbox" value="" id="width-5">
+                                            <label class="form-check-label" for="width-5">
+                                                20
+                                            </label>
+                                            <span>(8)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main__sidebar-height dropdown">
+                                    <button class="main__sidebar-check-btn btn dropdown-toggle p-0" type="button" id="dropdownMenuButton5" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+                                        Height
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <div class="main__sidebar-check-item">
+                                            <input class="form-check-input" type="checkbox" value="" id="height-1">
+                                            <label class="form-check-label" for="height-1">
+                                                4
+                                            </label>
+                                            <span>(7)</span>
+                                        </div>
+                                        <div class="main__sidebar-check-item">
+                                            <input class="form-check-input" type="checkbox" value="" id="height-2">
+                                            <label class="form-check-label" for="height-2">
+                                                8
+                                            </label>
+                                            <span>(8)</span>
+                                        </div>
+                                        <div class="main__sidebar-check-item">
+                                            <input class="form-check-input" type="checkbox" value="" id="height-3">
+                                            <label class="form-check-label" for="height-3">
+                                                10
+                                            </label>
+                                            <span>(8)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main__sidebar-form dropdown">
+                                    <button class="main__sidebar-check-btn btn dropdown-toggle p-0" type="button" id="dropdownMenuButton6" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+                                        Form
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <div class="main__sidebar-check-item">
+                                            <input class="form-check-input" type="checkbox" value="" id="form-1">
+                                            <label class="form-check-label" for="form-1">
+                                                Straight
+                                            </label>
+                                            <span>(7)</span>
+                                        </div>
+                                        <div class="main__sidebar-check-item">
+                                            <input class="form-check-input" type="checkbox" value="" id="form-2">
+                                            <label class="form-check-label" for="form-2">
+                                                Curved
+                                            </label>
+                                            <span>(8)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main__sidebar-range dropdown">
+                                    <button class="main__sidebar-check-btn btn dropdown-toggle p-0" type="button" id="dropdownMenuButton7" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+                                        Price Range
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <div class="main__sidebar-check-item">
+                                            <input class="form-check-input" type="checkbox" value="" id="range-1">
+                                            <label class="form-check-label" for="range-1">
+                                                550-699
+                                            </label>
+                                            <span>(27)</span>
+                                        </div>
+                                        <div class="main__sidebar-check-item">
+                                            <input class="form-check-input" type="checkbox" value="" id="range-2">
+                                            <label class="form-check-label" for="range-2">
+                                                700-999
+                                            </label>
+                                            <span>(38)</span>
+                                        </div>
+                                        <div class="main__sidebar-check-item">
+                                            <input class="form-check-input" type="checkbox" value="" id="range-3">
+                                            <label class="form-check-label" for="range-3">
+                                                1000-1999
+                                            </label>
+                                            <span>(48)</span>
+                                        </div>
+                                        <div class="main__sidebar-check-item">
+                                            <input class="form-check-input" type="checkbox" value="" id="range-4">
+                                            <label class="form-check-label" for="range-4">
+                                                2000-3999
+                                            </label>
+                                            <span>(8)</span>
+                                        </div>
+                                        <div class="main__sidebar-check-item">
+                                            <input class="form-check-input" type="checkbox" value="" id="range-5">
+                                            <label class="form-check-label" for="range-5">
+                                                4000+
+                                            </label>
+                                            <span>(8)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main__sidebar-setup-time dropdown">
+                                    <button class="main__sidebar-check-btn btn dropdown-toggle p-0" type="button" id="dropdownMenuButton8" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+                                        Set-up Time
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <div class="main__sidebar-check-item">
+                                            <input class="form-check-input" type="checkbox" value="" id="time-1">
+                                            <label class="form-check-label" for="time-1">
+                                                1+ (Fast)
+                                            </label>
+                                            <span>(27)</span>
+                                        </div>
+                                        <div class="main__sidebar-check-item">
+                                            <input class="form-check-input" type="checkbox" value="" id="time-2">
+                                            <label class="form-check-label" for="time-2">
+                                                5+ (Easy)
+                                            </label>
+                                            <span>(38)</span>
+                                        </div>
+                                        <div class="main__sidebar-check-item">
+                                            <input class="form-check-input" type="checkbox" value="" id="time-3">
+                                            <label class="form-check-label" for="time-3">
+                                                10+ (Average)
+                                            </label>
+                                            <span>(48)</span>
+                                        </div>
+                                        <div class="main__sidebar-check-item">
+                                            <input class="form-check-input" type="checkbox" value="" id="time-4">
+                                            <label class="form-check-label" for="time-4">
+                                                20+ (Expert)
+                                            </label>
+                                            <span>(8)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </aside>
+                    <div class="main__list-goods col-9">
+                        <nav class="main__list-search navbar p-0">
+                            <form class="main__search-wrapper d-flex">
+                                <input class="main__search-input form-control" type="search" placeholder="Search" aria-label="Search">
+                                <button class="main__search-btn btn d-flex align-items-center" type="submit">
+                                    <img src="./../images/icons/search-light.svg" alt="search">
+                                </button>
+                            </form>
+                        </nav>
+                        <div class="main__list-goods-wrap">
+                            <div class="row">
+                                <div class="main__item-wrapper col-4">
+                                    <div class="main__product">
+                                        <div class="main__product-status">
+                                            <div>
+                                                <a href="#">
+                                                    <img src="./../images/icons/green-tag.svg" alt="new">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="main__product-photo d-flex">
+                                            <img class="main__opac-img-1" src="./../images/img/product-1.svg" alt="product">
+                                            <img class="main__opac-img-2" src="./../images/img/product-1.svg" alt="product">
+                                        </div>
+                                        <div class="main__product-info">
+                                            <p>Contour 10x4</p>
+                                            <p class="main__price">8123,99</p>
+                                            <p class="main__currency">&#8364;</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main__item-wrapper col-4">
+                                    <div class="main__product">
+                                        <div class="main__product-status">
+                                            <div>
+                                                <a href="#">
+                                                    <img src="./../images/icons/white-tag.svg" alt="hot">
+                                                </a>
+                                            </div>
+                                            <div>
+                                                <a href="">
+                                                    <img src="./../images/icons/blue-tag.svg" alt="new">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="main__product-photo d-flex">
+                                            <img class="main__opac-img-1" src="./../images/img/product-2.svg" alt="product">
+                                            <img class="main__opac-img-2" src="./../images/img/product-2.svg" alt="product">
+                                        </div>
+                                        <div class="main__product-info">
+                                            <p>Contour 10x4</p>
+                                            <p class="main__price">8123,99</p>
+                                            <p class="main__currency">&#8364;</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main__item-wrapper col-4">
+                                    <div class="main__product">
+                                        <div class="main__product-photo d-flex">
+                                            <img class="main__opac-img-1" src="./../images/img/product-3.svg" alt="product">
+                                            <img class="main__opac-img-2" src="./../images/img/product-3.svg" alt="product">
+                                        </div>
+                                        <div class="main__product-info">
+                                            <p>Contour 10x4</p>
+                                            <p class="main__price">8123,99</p>
+                                            <p class="main__currency">&#8364;</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main__item-wrapper col-4">
+                                    <div class="main__product">
+                                        <div class="main__product-status">
+                                            <div>
+                                                <a href="#">
+                                                    <img src="./../images/icons/white-tag.svg" alt="new">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="main__product-photo d-flex">
+                                            <img class="main__opac-img-1" src="./../images/img/product-1.svg" alt="product">
+                                            <img class="main__opac-img-2" src="./../images/img/product-1.svg" alt="product">
+                                        </div>
+                                        <div class="main__product-info">
+                                            <p>Contour 10x4</p>
+                                            <p class="main__price">8123,99</p>
+                                            <p class="main__currency">&#8364;</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main__item-wrapper col-4">
+                                    <div class="main__product">
+                                        <div class="main__product-photo d-flex">
+                                            <img src="./../images/img/product-1.svg" alt="product">
+                                            <img src="./../images/img/product-1.svg" alt="product">
+                                        </div>
+                                        <div class="main__product-info">
+                                            <p>Contour 10x4</p>
+                                            <p class="main__price">8123,99</p>
+                                            <p class="main__currency">&#8364;</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main__item-wrapper col-4">
+                                    <div class="main__product">
+                                        <div class="main__product-status">
+                                            <div>
+                                                <a href="#">
+                                                    <img src="./../images/icons/green-tag.svg" alt="new">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="main__product-photo d-flex">
+                                            <img class="main__opac-img-1" src="./../images/img/product-3.svg" alt="product">
+                                            <img class="main__opac-img-2" src="./../images/img/product-3.svg" alt="product">
+                                        </div>
+                                        <div class="main__product-info">
+                                            <p>Contour 10x4</p>
+                                            <p class="main__price">8123,99</p>
+                                            <p class="main__currency">&#8364;</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main__item-wrapper col-4">
+                                    <div class="main__product">
+                                        <div class="main__product-status">
+                                            <div>
+                                                <a href="#">
+                                                    <img src="./../images/icons/green-tag.svg" alt="new">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="main__product-photo d-flex">
+                                            <img class="main__opac-img-1" src="./../images/img/product-1.svg" alt="product">
+                                            <img class="main__opac-img-2" src="./../images/img/product-1.svg" alt="product">
+                                        </div>
+                                        <div class="main__product-info">
+                                            <p>Contour 10x4</p>
+                                            <p class="main__price">8123,99</p>
+                                            <p class="main__currency">&#8364;</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main__item-wrapper col-4">
+                                    <div class="main__product">
+                                        <div class="main__product-status">
+                                            <div>
+                                                <a href="#">
+                                                    <img src="./../images/icons/white-tag.svg" alt="hot">
+                                                </a>
+                                            </div>
+                                            <div>
+                                                <a href="">
+                                                    <img src="./../images/icons/blue-tag.svg" alt="new">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="main__product-photo d-flex">
+                                            <img class="main__opac-img-1" src="./../images/img/product-2.svg" alt="product">
+                                            <img class="main__opac-img-2" src="./../images/img/product-2.svg" alt="product">
+                                        </div>
+                                        <div class="main__product-info">
+                                            <p>Contour 10x4</p>
+                                            <p class="main__price">8123,99</p>
+                                            <p class="main__currency">&#8364;</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main__item-wrapper col-4">
+                                    <div class="main__product">
+                                        <div class="main__product-photo d-flex">
+                                            <img class="main__opac-img-1" src="./../images/img/product-3.svg" alt="product">
+                                            <img class="main__opac-img-2" src="./../images/img/product-3.svg" alt="product">
+                                        </div>
+                                        <div class="main__product-info">
+                                            <p>Contour 10x4</p>
+                                            <p class="main__price">8123,99</p>
+                                            <p class="main__currency">&#8364;</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main__item-wrapper col-4">
+                                    <div class="main__product">
+                                        <div class="main__product-status">
+                                            <div>
+                                                <a href="#">
+                                                    <img src="./../images/icons/green-tag.svg" alt="new">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="main__product-photo d-flex">
+                                            <img class="main__opac-img-1" src="./../images/img/product-1.svg" alt="product">
+                                            <img class="main__opac-img-2" src="./../images/img/product-1.svg" alt="product">
+                                        </div>
+                                        <div class="main__product-info">
+                                            <p>Contour 10x4</p>
+                                            <p class="main__price">8123,99</p>
+                                            <p class="main__currency">&#8364;</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main__item-wrapper col-4">
+                                    <div class="main__product">
+                                        <div class="main__product-status">
+                                            <div>
+                                                <a href="#">
+                                                    <img src="./../images/icons/white-tag.svg" alt="hot">
+                                                </a>
+                                            </div>
+                                            <div>
+                                                <a href="">
+                                                    <img src="./../images/icons/blue-tag.svg" alt="new">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="main__product-photo d-flex">
+                                            <img class="main__opac-img-1" src="./../images/img/product-2.svg" alt="product">
+                                            <img class="main__opac-img-2" src="./../images/img/product-2.svg" alt="product">
+                                        </div>
+                                        <div class="main__product-info">
+                                            <p>Contour 10x4</p>
+                                            <p class="main__price">8123,99</p>
+                                            <p class="main__currency">&#8364;</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main__item-wrapper col-4">
+                                    <div class="main__product">
+                                        <div class="main__product-photo d-flex">
+                                            <img class="main__opac-img-1" src="./../images/img/product-3.svg" alt="product">
+                                            <img class="main__opac-img-2" src="./../images/img/product-3.svg" alt="product">
+                                        </div>
+                                        <div class="main__product-info">
+                                            <p>Contour 10x4</p>
+                                            <p class="main__price">8123,99</p>
+                                            <p class="main__currency">&#8364;</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main__item-wrapper col-4">
+                                    <div class="main__product">
+                                        <div class="main__product-status">
+                                            <div>
+                                                <a href="#">
+                                                    <img src="./../images/icons/green-tag.svg" alt="new">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="main__product-photo d-flex">
+                                            <img class="main__opac-img-1" src="./../images/img/product-1.svg" alt="product">
+                                            <img class="main__opac-img-2" src="./../images/img/product-1.svg" alt="product">
+                                        </div>
+                                        <div class="main__product-info">
+                                            <p>Contour 10x4</p>
+                                            <p class="main__price">8123,99</p>
+                                            <p class="main__currency">&#8364;</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main__item-wrapper col-4">
+                                    <div class="main__product">
+                                        <div class="main__product-status">
+                                            <div>
+                                                <a href="#">
+                                                    <img src="./../images/icons/white-tag.svg" alt="hot">
+                                                </a>
+                                            </div>
+                                            <div>
+                                                <a href="">
+                                                    <img src="./../images/icons/blue-tag.svg" alt="new">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="main__product-photo d-flex">
+                                            <img class="main__opac-img-1" src="./../images/img/product-2.svg" alt="product">
+                                            <img class="main__opac-img-2" src="./../images/img/product-2.svg" alt="product">
+                                        </div>
+                                        <div class="main__product-info">
+                                            <p>Contour 10x4</p>
+                                            <p class="main__price">8123,99</p>
+                                            <p class="main__currency">&#8364;</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main__item-wrapper col-4">
+                                    <div class="main__product">
+                                        <div class="main__product-photo d-flex">
+                                            <img class="main__opac-img-1" src="./../images/img/product-3.svg" alt="product">
+                                            <img class="main__opac-img-2" src="./../images/img/product-3.svg" alt="product">
+                                        </div>
+                                        <div class="main__product-info">
+                                            <p>Contour 10x4</p>
+                                            <p class="main__price">8123,99</p>
+                                            <p class="main__currency">&#8364;</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main__page-counter d-flex justify-content-between align-items-center">
+                            <form class="main__counter-wrap" onsubmit="return false">
+                                <button class="main__counter-btn" data-direction="minus">
+                                    <img src="./../images/icons/arrow-left.svg" alt="arrow">
+                                </button>
+                                <span>Page</span>
+                                <label>
+                                    <input type="text" value="1" class="main__counter-value">
+                                </label>
+                                <span>of 128</span>
+                                <button class="main__counter-btn" data-direction="plus">
+                                    <img src="./../images/icons/arrow-right.svg" alt="arrow">
+                                </button>
+                            </form>
+                            <div class="main__page-selection">
+                                <label>
+                                    <select class="main__select">
+                                        <option selected value="1">50</option>
+                                        <option value="2">49</option>
+                                        <option value="3">48</option>
+                                    </select>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="footer__contacts">
+                        <div class="footer__logo">
+                            <a href="#"><img src="" alt="logo"></a>
+                        </div>
+                        <div class="footer__address"></div>
+                        <div class="footer__phone"></div>
+                        <div class="footer__email"></div>
+                        <div class="footer__made-in"></div>
+                    </div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="./../scripts/scripts.js"></script>
+</body>
+</html>

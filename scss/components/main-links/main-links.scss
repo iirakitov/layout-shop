@@ -1,0 +1,39 @@
+.main {
+
+  &__links {
+    margin-top: 30px;
+  }
+  &__breadcrumb {
+    margin: 0;
+  }
+
+  .breadcrumb-item {
+    + .breadcrumb-item {
+      &::before {
+        content: url("./../images/icons/line.svg");
+        line-height: 15px;
+      }
+    }
+  }
+
+  &__bread-item {
+    a {
+      @include small-font($dark-grey);
+      @extend %off-links-styles;
+    }
+
+    &:first-child {
+      a {
+        color: $hover-color;
+      }
+    }
+  }
+
+  &__link-heading {
+    margin-top: 10px;
+
+    h2 {
+      @include h2-heading($main-txt-color);
+    }
+  }
+}

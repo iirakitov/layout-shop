@@ -1,0 +1,286 @@
+.main {
+  &__goods {
+    margin-top: 35px;
+  }
+
+  &__sidebar-goods {
+    padding-right: 15px;
+  }
+
+  &__sidebar-select {
+    @include middle-font($main-txt-color);
+    outline: none;
+    border: none;
+    border-radius: 60px;
+    padding: 15px 0 15px 30px;
+    background-position: right 1.75rem center;
+    box-shadow: 0 4px 4px 0 $grey-text;
+  }
+
+  &__sidebar-checkboxes {
+    margin-top: 25px;
+    padding: 15px 15px;
+    background-color: $background-white;
+    border-radius: 16px;
+    box-shadow: 0 4px 4px 0 $grey-text;
+  }
+
+  &__sidebar-reset {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+
+    span {
+      color: $dark-grey;
+      font-size: $font-size-xs;
+    }
+
+    button[type=reset] {
+      font-size: $font-size-xs;
+      border: none;
+      background: none;
+      color: $red-color;
+      display: flex;
+      align-items: center;
+    }
+
+    img {
+      padding-right: 5px;
+    }
+  }
+
+  .dropdown-menu {
+    position: initial;
+    border: none;
+    border-bottom: 1px solid $grey-text;
+    border-radius: unset;
+    padding: 0;
+  }
+
+  div.dropdown-menu.show {
+    transform: none !important;
+    position: initial !important;
+    inset: initial !important;
+
+  }
+
+
+  &__sidebar-check-btn {
+    @include blue-heading($blue-color);
+    width: 100%;
+    text-align: left;
+    margin-bottom: 12px;
+    position: relative;
+
+    &:hover {
+      color: $blue-color;
+    }
+  }
+
+  .dropdown-toggle::after {
+    position: absolute;
+    right: 0;
+    top: 50%;
+  }
+
+  .btn:focus {
+    box-shadow: none;
+  }
+
+  &__sidebar-check-item {
+    margin-bottom: 10px;
+
+    input {
+      margin-right: 10px;
+    }
+
+    label {
+      @include middle-font($main-txt-color);
+    }
+
+    span {
+      @include middle-font($grey-text);
+      margin-left: 5px;
+    }
+  }
+
+  &__sidebar-subcategory {
+    margin-top: 20px;
+  }
+
+  &__sidebar-type,
+  &__sidebar-features,
+  &__sidebar-width,
+  &__sidebar-height,
+  &__sidebar-form,
+  &__sidebar-range,
+  &__sidebar-setup-time {
+    @extend %margin-top;
+  }
+
+  /*RIGHT BLOCK BEGINNING*/
+
+  &__list-goods {
+    padding-left: 15px;
+
+  }
+
+  &__search-wrapper {
+    width: 100%;
+  }
+
+  &__search-input {
+    position: relative;
+    padding: 15px 70px 15px 40px;
+    border: none;
+    border-radius: 60px;
+    box-shadow: 0 4px 4px 0 $grey-text;
+  }
+
+  &__search-btn {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    padding: 0  25px;
+  }
+
+  .form-control:focus {
+    color: inherit;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    background-color: $background-white;
+  }
+
+  &__list-goods-wrap {
+    margin-top: 18px;
+  }
+
+  &__item-wrapper {
+    padding: 7px;
+  }
+
+
+  &__product {
+    position: relative;
+    padding: 35px 15px;
+    overflow: hidden;
+    background-color: $background-white;
+    box-shadow: 0 4px 4px 0 $grey-text;
+    border-radius: 16px;
+    transition: .5s box-shadow;
+
+    &:hover {
+      box-shadow: 0 6px 7px 0 #759533;
+
+      p, span {
+        color: $hover-color;
+      }
+
+      .main__product-photo {
+        transform: translateX(-100%);
+
+        .main__opac-img-1 {
+          opacity: 0.5;
+        }
+
+        .main__opac-img-2 {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  &__product-status {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+
+  &__product-photo {
+    transition: .5s;
+
+    img {
+      width: 100%;
+      padding: 0 5px;
+    }
+
+    .main__opac-img-1 {
+      opacity: 1;
+    }
+
+    .main__opac-img-2 {
+      opacity: 0.5;
+    }
+  }
+
+  &__product-info {
+    @include blue-heading($main-txt-color);
+    text-align: center;
+    margin-top: 25px;
+
+    p {
+      margin: 0;
+      transition: .5s;
+    }
+
+    .main__price {
+      display: inline-block;
+    }
+    .main__currency {
+      display: inline-block;
+      padding-left: 5px;
+    }
+  }
+
+  /*PAGE COUNTER*/
+
+  &__page-counter {
+    margin-top: 35px;
+  }
+
+  &__counter-wrap {
+    display: flex;
+    align-items: center;
+
+    span {
+      padding: 0 14px;
+      color: $dark-grey;
+      font-size: $font-size-l;
+    }
+  }
+
+  &__counter-btn {
+    background-color: $grey-text;
+    padding: 5px 30px;
+    border: none;
+    border-radius: 100px;
+
+    &:hover, &:focus {
+      background-color: $hover-color;
+    }
+  }
+
+  &__counter-value {
+    @include blue-heading($main-txt-color);
+    width: 70px;
+    text-align: center;
+    border: 1px solid $grey-text;
+    border-radius: 100px;
+    padding: 5px 0;
+    outline: 0;
+  }
+
+  &__select {
+    @include blue-heading($main-txt-color);
+    padding: 5px 35px 5px 25px;
+    border: 1px solid $grey-text;
+    border-radius: 100px;
+    appearance: none;
+    outline: 0;
+    background-image: url("./../images/icons/arrow-down.svg");
+    background-repeat: no-repeat;
+    background-position: center right 20px;
+
+  }
+}

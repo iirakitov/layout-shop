@@ -1,0 +1,141 @@
+@include l {
+  .main {
+    &__sidebar-reset {
+      flex-direction: column;
+    }
+  }
+}
+
+@include m {
+  .main {
+    &__main-goods {
+      .row {
+        flex-direction: column;
+      }
+    }
+
+    &__sidebar-reset {
+      flex-direction: row;
+    }
+
+    &__sidebar-goods, &__list-goods {
+      padding: 0;
+      width: 100%;
+    }
+
+    &__sidebar-check-list {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 20px;
+      .dropdown {
+        width: 25%;
+        margin: 0;
+      }
+    }
+
+    .dropdown-toggle::after {
+      display: none;
+    }
+
+    .dropdown-menu {
+      border-bottom: none;
+      min-width: unset;
+    }
+
+    &__sidebar-check-btn {
+      font-size: $font-size-m;
+    }
+
+    &__sidebar-check-item {
+      label, span {
+        font-size: $font-size-xs ;
+      }
+    }
+
+    &__list-goods {
+      margin-top: 20px;
+      padding: 0;
+    }
+  }
+}
+
+@include s {
+  .main {
+    &__sidebar-check-list {
+
+      .dropdown {
+        width: 50%;
+      }
+    }
+
+    &__sidebar-check-btn {
+      text-align: center;
+    }
+
+    .dropdown-menu {
+      padding-left: 20px;
+    }
+
+    &__sidebar-subcategory,
+    &__sidebar-type,
+    &__sidebar-features,
+    &__sidebar-width,
+    &__sidebar-height,
+    &__sidebar-form,
+    &__sidebar-range,
+    &__sidebar-setup-time {
+      border-bottom: 1px solid #BDBDBE;
+    }
+
+    &__counter-wrap {
+      width: 100%;
+      justify-content: center;
+    }
+
+    &__item-wrapper {
+      width: 50%;
+    }
+
+    &__product {
+      padding: 50px 10px 20px;
+    }
+
+    &__product-info {
+      font-size: $font-size-s;
+    }
+
+    &__product-photo {
+      img {
+        padding: 0 9px;
+      }
+    }
+
+    &__counter-btn {
+      padding: 20px;
+      border-radius: 50%;
+      img {
+        display: none;
+      }
+      &[data-direction = plus] {
+        background-image: url("./../images/icons/plus.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      &[data-direction = minus] {
+        background-image: url("./../images/icons/minus.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+
+        &:hover, &:focus {
+          background-color: $red-color;
+        }
+      }
+    }
+
+
+    &__page-selection {
+      display: none;
+    }
+  }
+}

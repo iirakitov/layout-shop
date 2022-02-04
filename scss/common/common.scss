@@ -1,0 +1,47 @@
+body {
+  background-color: $background-page;
+  font-family: $lato-font;
+}
+
+.container {
+  max-width: $width-xxl;
+  padding: 0;
+}
+
+.row {
+  margin: 0;
+}
+
+.row > * {
+  padding: 0;
+}
+
+@include xxl () {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: $width-xl ;
+  }
+}
+
+@include xl () {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: $width-l;
+  }
+}
+
+@include l () {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: $width-m;
+  }
+}
+
+@include m () {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: $width-s;
+  }
+}
+
+@include s () {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: $width-xs;
+  }
+}
