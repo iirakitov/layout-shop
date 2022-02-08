@@ -24,3 +24,4 @@ btns.forEach(btn => {
         inp.value = newValue;
     })
 })
+

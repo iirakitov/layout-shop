@@ -3,6 +3,10 @@
     &__sidebar-reset {
       flex-direction: column;
     }
+
+    &__item-wrapper {
+      width: 50%;
+    }
   }
 }
 
@@ -16,6 +20,10 @@
 
     &__sidebar-reset {
       flex-direction: row;
+    }
+
+    &__item-wrapper {
+      width: 50%;
     }
 
     &__sidebar-goods, &__list-goods {
@@ -93,20 +101,16 @@
     }
 
     &__item-wrapper {
-      width: 50%;
+      width: 100%;
     }
 
     &__product {
       padding: 50px 10px 20px;
     }
 
-    &__product-info {
-      font-size: $font-size-s;
-    }
-
     &__product-photo {
       img {
-        padding: 0 9px;
+        padding: 0 10px;
       }
     }
 

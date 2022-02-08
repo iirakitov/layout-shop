@@ -63,6 +63,150 @@
 
   &__made-in {
     margin-top: 20px;
+
+    a {
+      display: inline-block;
+    }
   }
 
+  &__menu-links {
+    @include footer-link();
+  }
+
+  &__news-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+
+    h2 {
+      @include blue-heading($background-white);
+      margin-bottom: 20px;
+      display: flex;
+      align-self: center;
+    }
+    .footer__news-label:after {
+      position: absolute;
+      content: '';
+      background-image: url("./../images/icons/green-send.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      right: 10px;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      height: 16px;
+      width: 16px;
+    }
+
+    input {
+      width: 200px;
+      outline: none;
+      border-radius: 39px;
+      border: 1px solid $border-grey;
+      background-color: inherit;
+      padding: 15px 40px 15px 30px;
+
+      &::placeholder {
+        font-size: $font-size-m;
+      }
+    }
+  }
+
+  &__news-form {
+    position: relative;
+  }
+
+  &__news-lang {
+
+    margin-top: 10px;
+
+    .footer__lang-wrap {
+      border: 1px solid $border-grey;
+      border-radius: 39px;
+
+
+    }
+
+    .footer__label-lang {
+      position: relative;
+
+      &:before {
+        position: absolute;
+        content: '';
+        background-image: url("./../images/icons/language-light.svg");
+        background-size: cover;
+        height: 24px;
+        width: 24px;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        left: 65px;
+      }
+
+
+      &:after {
+        position: absolute;
+        content: '';
+        background-image: url("./../images/icons/green-arrow.svg");
+        background-size: cover;
+        width: 14px;
+        height: 14px;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        right: 40px;
+      }
+    }
+
+    .footer__news-select {
+      @include small-font($background-white);
+      appearance: none;
+      background-color: inherit;
+      outline: none;
+      border: none;
+      padding: 15px 50px 15px 90px;
+
+      option {
+        background-color: $border-grey;
+      }
+    }
+  }
+
+  &__socials {
+    display: flex;
+    margin-top: 30px;
+
+    div {
+      padding: 0 2px;
+
+      a {
+        display: inline-block;
+      }
+    }
+  }
+
+  &__copyright {
+    padding: 10px 0;
+    background-color: $black-bg;
+
+    p {
+      color: $grey-text;
+    }
+  }
+
+  &__copy {
+    padding-right: 5px;
+  }
+
+  &__heart {
+    padding-left: 10px;
+  }
+
+  &__btn-up {
+    text-align: end;
+    padding-right: 45px;
+
+    a {
+      padding: 10px 15px;
+      background-color: $hover-color;
+      border-radius: 50%;
+    }
+  }
 }

@@ -55,13 +55,14 @@
     border-bottom: 1px solid $grey-text;
     border-radius: unset;
     padding: 0;
+    display: block;
   }
 
   div.dropdown-menu.show {
     transform: none !important;
     position: initial !important;
     inset: initial !important;
-
+    display: none;
   }
 
 
@@ -252,9 +253,10 @@
 
   &__counter-btn {
     background-color: $grey-text;
-    padding: 5px 30px;
+    padding: 10px 30px;
     border: none;
     border-radius: 100px;
+    display: flex;
 
     &:hover, &:focus {
       background-color: $hover-color;
